@@ -1,0 +1,24 @@
+{
+  "name": "rooftop-republic-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moryahng/rooftop-republic-dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moryahng/rooftop-republic-dashboard/issues"
+  },
+  "homepage": "https://github.com/moryahng/rooftop-republic-dashboard#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "knex": "^0.95.15"
+  }
+}
