@@ -1,5 +1,10 @@
+// knex and .env
+const env = require("dotenv");
+const knexConfig = require("./knexfile").development;
+const knex = require("knex")(knexConfig);
+
 // Express required modules
-const port = 8080;
+const port = process.env.PORT || 3000;
 const express = require("express");
 const app = express();
 app.use(express.static("public"));
@@ -26,7 +31,7 @@ const dashboardService = new DashboardService(express, axios);
 app.use("/", dashboardRouter.router());
 
 app.listen(port, () => {
-    console.log(`Application listening to: http://localhost:${port}`)
-})
+  console.log(`Application listening to: http://localhost:${port}`);
+});
 
 module.exports = app;
