@@ -2,7 +2,7 @@ exports.up = function (knex) {
   return knex.schema.createTable("farm", (table) => {
     table.increments();
     table.string("company_name");
-    table.string("name").unique();
+    table.string("farm_name").unique();
     table.string("address");
     table.integer("size");
     table.datetime("open_date");

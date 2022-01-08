@@ -31,7 +31,6 @@ class ApiRouter {
   }
 
   getFarmInfo(req, res) {
-    const farmId;
     const farmId = 1;
     this.apiService.readFarmInfo(farmId).then((data) => {
       res.send(data);
@@ -39,7 +38,6 @@ class ApiRouter {
   }
 
   getImpactReachVisitors(req, res) {
-    const farmId;
     const farmId = 1;
     this.apiService.readVisitors(farmId).then((data) => {
       res.send(data);
@@ -47,7 +45,6 @@ class ApiRouter {
   }
 
   getImpactReachSocialMedia(req, res) {
-    const farmId;
     const farmId = 1;
     this.apiService.readSocialMedia(farmId).then((data) => {
       res.send(data);
@@ -55,7 +52,6 @@ class ApiRouter {
   }
 
   getImpactReachFoodDonated(req, res) {
-    const farmId;
     const farmId = 1;
     this.apiService.readFoodDonated(farmId).then((data) => {
       res.send(data);
@@ -63,7 +59,6 @@ class ApiRouter {
   }
 
   getFarmOverview(req, res) {
-    const farmId;
     const farmId = 1;
     this.apiService.readPlanter(farmId).then((data) => {
       res.send(data);
@@ -71,7 +66,6 @@ class ApiRouter {
   }
 
   getProgressOfCrops(req, res) {
-    const farmId;
     const farmId = 1;
     this.apiService.readPlanter(farmId).then((data) => {
       res.send(data);
@@ -79,7 +73,6 @@ class ApiRouter {
   }
 
   getEvents(req, res) {
-    const farmId;
     const farmId = 1;
     this.apiService.readEvent(farmId).then((data) => {
       res.send(data);

@@ -3,7 +3,7 @@ exports.up = function (knex) {
     table.increments();
     table.integer("farm_id").references("id").inTable("farm").notNull();
     table.datetime("date");
-    table.integer("food_donated");
+    table.string("food_donated");
     table.timestamps(false, true);
   });
 };

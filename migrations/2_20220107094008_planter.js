@@ -5,7 +5,7 @@ exports.up = function (knex) {
     table.string("zone");
     table.string("crop");
     table.string("type");
-    table.integer("yield");
+    table.string("yield");
     table.string("status");
     table.datetime("sowing_month").nullable();
     table.datetime("harvest_estimate").nullable();
