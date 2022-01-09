@@ -17,7 +17,7 @@ $(() => {
 
                 <div class="col-6 ">
                     <h4 class="card-title text-left farm_info">Farm Information</h4>
-                    <h1 class="text-left mt-5 farm_location" style="color:#3DA8A9">Metroplaza</h1>
+                    <h1 class="text-left mt-5 farm_location" style="color:#3DA8A9">{{this.company_name}}</h1>
                 </div>
 
             </div>
