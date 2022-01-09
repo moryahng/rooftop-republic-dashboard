@@ -20,12 +20,9 @@ app.set("views", "./views");
 // Axios set up
 const axios = require("axios");
 
-// // Dashboard Service set up
-// const DashboardService = require("./Services/DashboardService");
-// const dashboardService = new DashboardService(express, axios);
 // // Dashboard Router set up
-// const DashboardRouter = require("./Routers/DashboardRouter");
-// const dashboardRouter = new DashboardRouter(express, dashboardService);
+ const DashboardRouter = require("./Routers/DashboardRouter");
+ const dashboardRouter = new DashboardRouter(express);
 
 // API Service set up
 const ApiService = require("./Services/ApiService");
@@ -35,6 +32,7 @@ const ApiRouter = require("./Routers/ApiRouter");
 const apiRouter = new ApiRouter(express, apiService);
 
 // app.use("/:id/dashboard", dashboardRouter.router());
+app.use("/", dashboardRouter.router());
 app.use("/api", apiRouter.router());
 
 app.listen(port, () => {

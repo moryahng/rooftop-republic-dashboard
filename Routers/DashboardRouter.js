@@ -1,7 +1,6 @@
 class DashboardRouter {
-  constructor(express, dashboardService) {
+  constructor(express) {
     this.express = express;
-    this.dashboardService = dashboardService;
   }
 
   router() {
