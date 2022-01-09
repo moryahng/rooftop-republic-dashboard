@@ -63,6 +63,11 @@ p {
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* Intro */
 .intro_info img{
     border: 1px solid rgba(226, 226, 226, 0.514);
@@ -97,6 +102,61 @@ p {
     margin-bottom: 0px;
 }
 
+/* Impact */
+.impact_icon {
+    height: 88px;
+    display: inline-block;  
+}
+
+.impact_info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.impact_group h2 {
+    font-weight: 400;
+}
+
+.impact_group:hover {
+    color: #42C1C6;
+}
+
+.impact_freq {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Overview */
+.overview_box {
+    width: 500px;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+.empty_div {
+    background-color:#F5F5F5 ;
+    width: 10px;
+}
+
+.overview_icon {
+    width: 73px;
+    display: inline-block;  
+}
+
+.overview_freq {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.overview_info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.productivity {
+    color: #42C1C6;
+    text-align: center;
+}
 
 /* Progress */
 
@@ -151,9 +211,6 @@ p {
     font-weight: 400;
     line-height: 40px; 
 }
-
-
-
 
 /* EVENT CARD */
 .card {
@@ -226,7 +283,7 @@ p {
 } */
 
 /* diagram */
-/* #diagram{
+#diagram{
     display: flex;
     flex-direction: row; 
     margin-left: 200px;
@@ -249,4 +306,3 @@ p {
     width: 90px;
     height: 90px;
 }
- */
