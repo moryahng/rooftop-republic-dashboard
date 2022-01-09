@@ -34,9 +34,9 @@ $(() => {
                     <div class="summer_drink col m-2">
                     <div class="card" style="width: 18rem; ">
                         <div class="card_top">
-                            <img src="./assets/Past Event Card_Special Summer Herb Drink.jpeg" class="card-img-top"
+                            <img src="./assets/Event_{{this.name}}.jpeg" class="card-img-top"
                                 alt="workshop">
-                            <h3 class="event_type" style="background-color:#FCBE00;">{{this.type}}</h3>
+                            <h3 class="event_type" id="{{this.type}}">{{this.type}}</h3>
                         </div>
                         <div class="card-body">
                             <h2 class="card-title text-center p-2">{{this.name}}</h2>
@@ -50,9 +50,15 @@ $(() => {
                                         class="span_bold text-start p-3">{{this.start_time}} - {{this.end_time}}</span></span>
                             </div>
                             <div class="text-center">
+                                {{#if publish}}
                                 <p class=" span_bold pt-1" style="color:#42C1C6;">
                                     <i class="far fa-check-circle text-center" style="color:#42C1C6;"></i>Published
                                 </p>
+                                {{else}}
+                                <p class=" span_bold pt-1" style="color:#212529;">
+                                    <i class="far fa-check-circle text-center" style="color:#42C1C6;"></i>Draft
+                                </p>
+                                {{/if}}
                                 <a href="#" class="btn btn-primary">More Details</a>
                             </div>
                         </div>

@@ -366,6 +366,14 @@ nav{
     position: absolute;
 }
 
+#Workshop{
+    background-color:#FCBE00;
+}
+
+#Event{
+    background-color:#0080C3;
+}
+
 .add_event_icon {
     width: 108px;
     margin: 120px auto 30px auto;
