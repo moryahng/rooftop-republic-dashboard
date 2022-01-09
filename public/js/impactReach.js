@@ -20,7 +20,7 @@ $(() => {
         `
         );
         let visits = 0;
-        for (let i = 0; i < data.length; i++) {
+        for (let i = 0; i < 8; i++) {
           visits += data[i].visit;
         }
         $("#visitors").html(
@@ -55,7 +55,7 @@ $(() => {
         `
         );
         let visits = 0;
-        for (let i = 0; i < data.length; i++) {
+        for (let i = 0; i < 8; i++) {
           visits += data[i].visit;
         }
         $("#socialMedia").html(
