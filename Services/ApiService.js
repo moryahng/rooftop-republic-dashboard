@@ -18,7 +18,7 @@ class ApiService {
         farm_name: row.farm_name,
         name: row.name,
         address: row.address,
-        size: row.size,
+        size: new Intl.NumberFormat().format(row.size),
         open_date: row.open_date.toLocaleDateString(),
       }));
     });
@@ -75,13 +75,13 @@ class ApiService {
     });
   }
 
-  readPlanter(farmId) {
+  readReadyToHarvest(farmId) {
     let query = this.knex
       .select()
       .from("planter")
       .where("farm_id", farmId)
+      .where("status", "Ready to harvest")
       .orderBy("planter.id", "asc");
-
     return query.then((rows) => {
       return rows.map((row) => ({
         planter_id: row.id,
@@ -91,9 +91,100 @@ class ApiService {
         type: row.type,
         yield: row.yield,
         status: row.status,
-        sowing_month: row.sowing_month.toLocaleDateString(),
-        harvest_estimate: row.harvest_estimate.toLocaleDateString(),
-        harvest_actual: row.harvest_actual.toLocaleDateString(),
+        sowing_month: row.sowing_month, //.toLocaleDateString()
+        harvest_estimate: row.harvest_estimate, //.toLocaleDateString()
+        harvest_actual: row.harvest_actual, //.toLocaleDateString()
+        contribution_type: row.contribution_type,
+        contribution_details: row.contribution_details,
+      }));
+    });
+  }
+
+  readActiveGrowing(farmId) {
+    let query = this.knex
+      .select()
+      .from("planter")
+      .where("farm_id", farmId)
+      .where("status", "Active growing")
+      .orderBy("planter.id", "asc");
+    return query.then((rows) => {
+      return rows.map((row) => ({
+        planter_id: row.id,
+        farm_id: row.farm_id,
+        zone: row.zone,
+        crop: row.crop,
+        type: row.type,
+        yield: row.yield,
+        status: row.status,
+        sowing_month: row.sowing_month, //.toLocaleDateString()
+        harvest_estimate: row.harvest_estimate, //.toLocaleDateString()
+        harvest_actual: row.harvest_actual, //.toLocaleDateString()
+        contribution_type: row.contribution_type,
+        contribution_details: row.contribution_details,
+      }));
+    });
+  }
+
+  readReadyToSow(farmId) {
+    let query = this.knex
+      .select()
+      .from("planter")
+      .where("farm_id", farmId)
+      .where("status", "Harvest Finished")
+      .orderBy("planter.harvest_actual", "asc");
+    return query.then((rows) => {
+      return rows.map((row) => ({
+        planter_id: row.id,
+        farm_id: row.farm_id,
+        zone: row.zone,
+        crop: row.crop,
+        type: row.type,
+        yield: row.yield,
+        status: row.status,
+        sowing_month: row.sowing_month, //.toLocaleDateString()
+        harvest_estimate: row.harvest_estimate, //.toLocaleDateString()
+        harvest_actual: row.harvest_actual.toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        }), //.toLocaleDateString()
+        contribution_type: row.contribution_type,
+        contribution_details: row.contribution_details,
+      }));
+    });
+  }
+
+  readPlanter(farmId, crop) {
+    let query = this.knex
+      .select()
+      .from("planter")
+      .where("farm_id", farmId)
+      .andWhere("crop", crop)
+      .andWhere(function () {
+        this.where("status", "Active growing").orWhere(
+          "status",
+          "Ready to harvest"
+        );
+      })
+      .orderBy("planter.id", "asc");
+    return query.then((rows) => {
+      return rows.map((row) => ({
+        planter_id: row.id,
+        farm_id: row.farm_id,
+        zone: row.zone,
+        crop: row.crop,
+        type: row.type,
+        yield: row.yield,
+        status: row.status,
+        sowing_month: row.sowing_month.toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "short",
+        }), //.toLocaleDateString()
+        harvest_estimate: row.harvest_estimate.toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "short",
+        }), //.toLocaleDateString()
+        harvest_actual: row.harvest_actual, //.toLocaleDateString()
         contribution_type: row.contribution_type,
         contribution_details: row.contribution_details,
       }));
@@ -105,7 +196,7 @@ class ApiService {
       .select()
       .from("event")
       .where("farm_id", farmId)
-      .orderBy("event.id", "asc");
+      .orderBy("event.start", "asc");
 
     return query.then((rows) => {
       return rows.map((row) => ({
@@ -113,15 +204,25 @@ class ApiService {
         farm_id: row.farm_id,
         name: row.name,
         type: row.type,
-        start_date: row.start.toLocaleDateString(),
-        start_time: row.start.toLocaleTimeString([], {
-          hour: "2-digit",
-          minute: "2-digit",
+        start_date: row.start.toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
         }),
-        end_date: row.end.toLocaleDateString(),
-        end_time: row.end.toLocaleTimeString([], {
-          hour: "2-digit",
-          minute: "2-digit",
+        start_time: row.start.toLocaleString("en-US", {
+          hour: "numeric",
+          minute: "numeric",
+          hour12: true,
+        }),
+        end_date: row.end.toLocaleDateString(undefined, {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        }),
+        end_time: row.end.toLocaleString("en-US", {
+          hour: "numeric",
+          minute: "numeric",
+          hour12: true,
         }),
         publish: row.publish,
       }));

@@ -21,8 +21,8 @@ app.set("views", "./views");
 const axios = require("axios");
 
 // // Dashboard Router set up
- const DashboardRouter = require("./Routers/DashboardRouter");
- const dashboardRouter = new DashboardRouter(express);
+const DashboardRouter = require("./Routers/DashboardRouter");
+const dashboardRouter = new DashboardRouter(express);
 
 // API Service set up
 const ApiService = require("./Services/ApiService");
