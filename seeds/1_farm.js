@@ -18,7 +18,8 @@ exports.seed = function (knex) {
           id: 2,
           company_name: "New Town Plaza",
           farm_name: "New Town Plaza Rooftop Farm",
-          address: "18-19 Sha Tin Centre St, Sha Tin",
+          address:
+            "Level 7 Sky Garden, New Town Plaza, 18-19 Sha Tin Centre St, Sha Tin",
           size: 8000,
           open_date: "2020-7-25",
         },
