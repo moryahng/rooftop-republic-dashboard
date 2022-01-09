@@ -5,7 +5,7 @@ class DashboardRouter {
 
   router() {
     const router = this.express.Router();
-    router.get("/", this.get.bind(this));
+    router.get("/:id", this.get.bind(this));
     return router;
   }
 

@@ -8,22 +8,20 @@
                         <div class="impact-up-partA">
                         <div class="impact_group m-2 mt-2">
                             <img src="./assets/icons/Icon=Icon - Ready to harvest.png" alt="visitor" class="overview_icon m-3">
-                            <div class="overview_info">
-                                <a href="#">
-                                <h2 class="overview_title">Ready to harvest</h2>
-                                <h3 class="overview_data">48</h3>
-                                <h3 class="overview_freq">Planters</h3></a>
+                            
+                            <div class="overview_info" id="readyToHarvest">
+                                {{readyToHarvest}}
                             </div>
+
                         </div>
 
                         <div class="impact_group m-2 mt-2">
                             <img src="./assets/icons/Icon=Icon - Active growing.png" alt="visitor" class="overview_icon m-3">
-                            <div class="overview_info">
-                                <a href="#">
-                                <h2 class="overview_title">Active growing</h2>
-                                <h3 class="overview_data">138</h3>
-                                <h3 class="overview_freq">Planters</h3></a>
+                            
+                            <div class="overview_info" id="activeGrowing">
+                                {{activeGrowing}}
                             </div>
+
                         </div>
                         </div> 
                             <div class="doughnut-container" style="position: relative; height:150px; width:150px">
@@ -34,12 +32,11 @@
                     <div class="impact-down">
                         <div class="impact_group m-2 mt-2">
                             <img src="./assets/icons/Icon=Icon - Ready to sow.png" alt="visitor" class="overview_icon m-3">
-                            <div class="overview_info">
-                                <a href="#">
-                                <h2 class="overview_title">Ready to sow</h2>
-                                <h3 class="overview_data">114</h3>
-                                <h3 class="overview_freq">Planters</h3></a>
+                            
+                            <div class="overview_info" id="readyToSow">
+                                {{readyToSow}}
                             </div>
+
                         </div>
 
                         <div class="impact_group m-2 mt-2 soil-planted">
@@ -60,52 +57,10 @@
                         <div class="card-body">
                             <h1 class="productivity">Productivity</h1>
                         
-                                <table>
-                                <tr>
-                                    <th>Crop</th>
-                                    <th>Yield</th>
-                                    <th>Date of Harvest</th>
-                                    <th>Contribution</th>
-                                </tr>
-                                <tr>
-                                    <td>Chilli</td>
-                                    <td>13 kg</td>
-                                    <td>7 Jan 2021</td>
-                                    <td>Donation</td>
-                                </tr>
-                                <tr>
-                                    <td>Rosemary</td>
-                                    <td>5kg</td>
-                                    <td>14 Jan 2021</td>
-                                    <td>Event</td>
-                                </tr>
-                                <tr>
-                                    <td>Potato</td>
-                                    <td>9.5kg</td>
-                                    <td>25 Feb 2021</td>
-                                    <td>Donation</td>
-                                </tr>
-                                <tr>
-                                    <td>Carrot</td>
-                                    <td>16kg</td>
-                                    <td>19 May 2021</td>
-                                    <td>Event</td>
-                                </tr>
-                                <tr>
-                                    <td>Spinach</td>
-                                    <td>8kg</td>
-                                    <td>26 Aug 2021</td>
-                                    <td>Donation</td>
-                                </tr>
-                                <tr>
-                                    <td>Lettuce</td>
-                                    <td>12kg</td>
-                                    <td>18 Oct 2021</td>
-                                    <td>Event</td>
-                                </tr>                                                                                                                            
-                                </table>
-                           
-                                
+                            <table id="productivity">
+
+                            {{productivity}}                                                           
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -113,3 +68,6 @@
         </div>
         </div>
     </section>
+
+{{>script}}
+<script src="/js/farmOverview.js"></script>

@@ -7,42 +7,19 @@
                             class="img-fluid rounded-start" alt="metro plaza">
                     </div>
                     <div class="col-md-6 col-lg-6 col-sm-12">
-                        <div class="card-body">
 
-                            <div class="row intro_info">
-
-                                <div class="col-4 ms-4">
-                                    <img src="./assets/logo.png" alt="logo">
-                                </div>
-
-                                <div class="col-6 ">
-                                    <h4 class="card-title text-left farm_info">Farm Information</h4>
-                                    <h1 class="text-left mt-5 farm_location" style="color:#3DA8A9">Metroplaza</h1>
-                                </div>
-
-                            </div>
-                            <div class="row mx-4 intro_text">
-                                <div class="col-4 info-heading-container">
-                                    <p class="card-text ms-5 info-heading">
-                                        Name:<br>
-                                        Address :<br><br>
-                                        Size :<br>
-                                        Opened :<br>
-                                    </p>
-                                </div>
-                                <div class="col-6 info-content">
-                                    <span class="card-text">
-                                        Metroplaza Rooftop Farm<br>
-                                        Level 5 Sky Garden, Metroplaza, 223 Hing Fong Road, Kwai Chung <br>
-                                        13,000 square<br>
-                                        19/05/2018
-                                    </span>
-                                </div>
-                            </div>
+                    {{!-- Install data from database (start) --}}
+                        <div class="card-body" id="farmInfo">
+                            {{farmInfo}}
                         </div>
+                    {{!-- Install data from database (end) --}}
+
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
+
+{{>script}}
+<script src="/js/farmInfo.js"></script>
