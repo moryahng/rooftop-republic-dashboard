@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Martin-->
+    <!-- <div id="intro">
+    <div class="photo">
+      <img src="./assets/Metroplaza urban rooftop_ Farm Information.png" alt="Avatar" style="width:100%">
+    </div>
+    <div class="container Information">
+      <div class="row">
+      <div class="col-sm-4"> </div>
+        <div class="col-sm-8"><h2>Farm Information</h2></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-4"><img class="text-start logo" src="./assets/logo.png"  /></div>
+          <div class="col-sm-8 metro"><h1>Metroplaza</h1></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-4"><h2>Name:</h2></div>
+          <div class="col-sm-8">Metroplaza Rooftop Farm</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-4"><h2>Address:</h2></div>
+          <div class="col-sm-8">Level 5 Sky Garden, Metroplaza, 223 Hing Fong Road, Kwai Chung</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-4"><h2>Size:</h2></div>
+          <div class="col-sm-8">13,000 square</div>
+      </div>
+      <div class="row">
+          <div class="col-4"><h2>Opened:</h2></div>
+          <div class="col-8">19/05/2018</div>
+      </div>
+  </div>
+</div>
+<div id="diagram">
+  <div class="container click">
+      <div class="row clickable">
+        <div class="col-sm-5">
+          <img class="text-start logo2" src="./assets/icons/Visitors icon.png"/>
+        </div>
+        <div class="col-sm-7">
+            <h2>Visitors</h2>
+            <h3>387</h3>
+            <p>Weekly</p>
+        </div>
+      </div>
+      <div class="row clickable">
+          <div class="col-sm-5">
+            <img class="text-start logo2" src="./assets/icons/Social Media.png"/>
+          </div>
+          <div class="col-sm-7">
+            <h2>Social Media</h2>
+            <h3>1437</h3>
+            <p>Weekly</p>
+          </div>
+      </div>
+      <div class="row clickable">
+          <div class="col-sm-5">
+            <img class="text-start logo2" src="./assets/icons/food donated icon.png"/>
+          </div>
+          <div class="col-sm-7">
+            <h2>Food Donated</h2>
+            <h3>14.7kg</h3>
+            <p>Monthly</p>
+          </div>
+      </div>
+
+  </div>
+  <div class="table">
+      <p>table</p>
+
+  </div>
+  </div> -->
+    <!--Martin-->
+    <!--intro-->
+    <section id=intro>
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-5 intro_photo">
+                        <img src="./assets/Metroplaza urban rooftop_ Farm Information.png"
+                            class="img-fluid rounded-start" alt="metro plaza">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h4 class="card-title text-center farm_info">Farm Information</h4>
+                            <div class="row intro_info">
+                                <div class="col-4 ms-4">
+                                    <img src="./assets/logo.png" alt="logo">
+                                </div>
+                                <div class="col-6">
+                                    <h1 class="text-start mt-5">Metroplaza</h1>
+                                </div>
+                                </div>
+                                    <div class="row mx-4 intro_text">
+                                        <div class="col-4">
+                                            <p class="card-text ms-5">
+                                                Name:<br>
+                                                Address :<br><br>
+                                                Size :<br>
+                                                Opened :<br>
+                                            </p>
+                                        </div>
+                                        <div class="col-8">
+                                            <span class="card-text">
+                                                Metroplaza Rooftop Farm<br>
+                                                Level 5 Sky Garden, Metroplaza, 223 Hing Fong Road, Kwai Chung <br>
+                                                13,000 square<br>
+                                                19/05/2018
+                                            </span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Progress-->
+    <section id="progress" class="carousel slide" data-bs-ride="carousel">
+        <div class="container">
+            <h1 class="py-5 ">Progress of Crops</h1>
+
+            <!--Tabbed bar-->
+
+            <div class="mb-3 carousel">
+                <button class="w3-bar-item w3-button tablink w3-red active" data-bs-target="#progress"
+                    data-bs-slide-to="0" onclick="openCrops(event,'Chili')">Chili</button>
+                <button class="w3-bar-item w3-button tablink" data-bs-target="#progress" data-bs-slide-to="1"
+                    onclick="openCrops(event,'Rosemary')">Rosemary</button>
+
+                <button class="w3-bar-item w3-button tablink" data-bs-target="#progress" data-bs-slide-to="2"
+                    onclick="openCrops(event,'Chrysanthemum')">Chrysanthemum</button>
+                <button class="w3-bar-item w3-button tablink" data-bs-target="#progress" data-bs-slide-to="3"
+                    onclick="openCrops(event,'Carrot')">Carrot</button>
+                <button class="w3-bar-item w3-button tablink" data-bs-target="#progress" data-bs-slide-to="4"
+                    onclick="openCrops(event,'Spinach')">Spinach</button>
+                <button class="w3-bar-item w3-button tablink" data-bs-target="#progress" data-bs-slide-to="1"
+                    onclick="openCrops(event,'CherryTomato')">Cherry
+                    Tomato</button>
+                <button class="w3-bar-item w3-button tablink" data-bs-target="#progress" data-bs-slide-to="5"
+                    onclick="openCrops(event,'Potato')">Potato</button>
+                <button class="w3-bar-item w3-button tablink" data-bs-target="#progress" data-bs-slide-to="6"
+                    onclick="openCrops(event,'Fig')">Fig</button>
+                <button class="w3-bar-item w3-button tablink" data-bs-target="#progress" data-bs-slide-to="7"
+                    onclick="openCrops(event,'IndianLettuce')">Indian
+                    Lettuce</button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <!--Chili-->
+                <div id="Chili" class="crops carousel-item active">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chili</h5>
+
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Growing <br>
+                                                Fruit <br>
+                                                Zone A <br>
+                                                Dec 2021 <br>
+                                                Feb 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Chili.jpeg"
+                                    class="img-fluid rounded-start" alt="chili">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Rosemary-->
+                <div id="Rosemary" class="crops carousel-item">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rosemary</h5>
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Growing <br>
+                                                Herb <br>
+                                                Zone A <br>
+                                                Dec 2021 <br>
+                                                Feb 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Rosemary.jpeg"
+                                    class="img-fluid rounded-start" alt="Rosemary">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Chrysanthemum-->
+                <div id="Chrysanthemum" class="crops carousel-item">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chrysanthemum</h5>
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Growing <br>
+                                                Flower <br>
+                                                Zone E <br>
+                                                Nov 2021 <br>
+                                                Jan 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Chrysanthemum.png"
+                                    class="img-fluid rounded-start" alt="Chrysanthemum">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Carrot-->
+                <div id="Carrot" class="crops carousel-item">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Carrot</h5>
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Ready to harvest <br>
+                                                Root / Stem <br>
+                                                Zone B <br>
+                                                Oct 2021 <br>
+                                                Jan 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Carrot.jpeg"
+                                    class="img-fluid rounded-start" alt="Carrot">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Spinach-->
+                <div id="Spinach" class="crops carousel-item">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Spinach</h5>
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Ready to harvest <br>
+                                                Leafy Green <br>
+                                                Zone C <br>
+                                                Dec 2021 <br>
+                                                Jan 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Spinach.jpeg"
+                                    class="img-fluid rounded-start" alt="Spinach">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Cherry Tomato-->
+                <div id="CherryTomato" class="crops carousel-item">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cherry Tomato</h5>
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Growing <br>
+                                                Fruit <br>
+                                                Zone A <br>
+                                                Dec 2021 <br>
+                                                Mar 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Cherry Tomato.jpeg"
+                                    class="img-fluid rounded-start" alt="Cherry Tomato">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Potato-->
+                <div id="Potato" class="crops carousel-item">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Potato</h5>
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Growing <br>
+                                                Root / Stem <br>
+                                                Zone B <br>
+                                                Nov 2021 <br>
+                                                Mar 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Potato.jpeg"
+                                    class="img-fluid rounded-start" alt="Potato">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Fig-->
+                <div id="Fig" class="crops carousel-item">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fig</h5>
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Growing <br>
+                                                Tree <br>
+                                                Zone D <br>
+                                                Aug 2019 <br>
+                                                Jun 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Fig.jpeg"
+                                    class="img-fluid rounded-start" alt="Fig">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Indian Lettuce-->
+                <div id="IndianLettuce" class="crops carousel-item">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Indian Lettuce</h5>
+                                    <div class="row my-5 mx-4">
+                                        <div class="col-6">
+                                            <p class="card-text">
+                                                Status: <br>
+                                                Type: <br>
+                                                Planting Zone: <br>
+                                                Sowing Month: <br>
+                                                Excepted Harvest Month:
+                                            </p>
+                                        </div>
+                                        <div class="col-5">
+                                            <span class="card-text">
+                                                Ready to harvest <br>
+                                                Leafy Green <br>
+                                                Zone X <br>
+                                                Aug 2021 <br>
+                                                Jan 2022
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 d-flex justify-content-end crops_img">
+                                <img src="./assets/crops/Progress of Crops Card_Indian Lettuce.jpeg"
+                                    class="img-fluid rounded-start" alt="Indian Lettuce">
+                                <span class="crops_date">05/01/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Events-->
+    <section id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="py-5 ">Events</h1>
+                </div>
+                <div class="col d-flex justify-content-end py-3">
+                    <button class="m-4" style="background: #42C1C6; color: white;">Upcoming</button>
+                    <button class="m-4">Past</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col create_event m-2">
+                    <div class="card" style="width: 18rem; height: 410px;">
+                        <div class="text-center">
+                            <img src="./assets/icons/Add Event Default.png" alt="add event" class="add_event_icon">
+                            <h2 class="">Create New Event</h2>
+                            <div class="event_button">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summer_drink col m-2">
+                    <div class="card" style="width: 18rem; ">
+                        <div class="card_top">
+                            <img src="./assets/Past Event Card_Special Summer Herb Drink.jpeg" class="card-img-top"
+                                alt="workshop">
+                            <h3 class="event_type" style="background-color:#FCBE00;">Workshop</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title text-center p-2">Special Summer Herb Drink</h2>
+                            <div class="p-1">
+                                <i class="far fa-calendar-alt"> </i>
+                                <span class="card-text text-start py-1">Date <span class="span_bold text-start p-3">19th
+                                        June 2021</span></span>
+                            </div>
+                            <div class="p-1">
+                                <i class="far fa-clock"></i>
+                                <span class="card-text text-start py-1">Time <span
+                                        class="span_bold text-start p-3">2:00pm - 5:00pm</span></span>
+                            </div>
+                            <div class="text-center">
+                                <p class=" span_bold pt-1" style="color:#42C1C6;">
+                                    <i class="far fa-check-circle text-center" style="color:#42C1C6;"></i>Published
+                                </p>
+                                <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="farmer col m-2">
+                    <div class="card" style="width: 18rem; ">
+                        <div class="card_top">
+                            <img src="./assets/Past Event Card_A Day of Farmer.jpeg" class="card-img-top"
+                                alt="workshop">
+                            <h3 class="event_type" style="background-color:#0080C3; width: 90px;">Event</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title text-center p-2">A Day of Farmer</h2>
+                            <div class="p-1">
+                                <i class="far fa-calendar-alt"> </i>
+                                <span class="card-text text-start py-1">Date <span
+                                        class="span_bold text-start p-3">01-05 May 2021</span></span>
+                            </div>
+                            <div class="p-1">
+                                <i class="far fa-clock"></i>
+                                <span class="card-text text-start py-1">Time <span
+                                        class="span_bold text-start p-3">10:00am - 1:00pm</span></span>
+                            </div>
+                            <div class="text-center">
+                                <p class=" span_bold pt-1" style="color:#42C1C6;">
+                                    <i class="far fa-check-circle text-center" style="color:#42C1C6;"></i>Published
+                                </p>
+                                <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="farmer_market col m-2">
+                    <div class="card" style="width: 18rem; ">
+                        <div class="card_top">
+                            <img src="./assets/Upcoming Event Card_Farmer's Market.png" class="card-img-top"
+                                alt="workshop">
+                            <h3 class="event_type" style="background-color:#0080C3; width: 90px;">Event</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title text-center p-2">Farmer's Market</h2>
+                            <div class="p-1">
+                                <i class="far fa-calendar-alt"> </i>
+                                <span class="card-text text-start py-1">Date <span
+                                        class="span_bold text-start p-3">18-24 April 2021</span></span>
+                            </div>
+                            <div class="p-1">
+                                <i class="far fa-clock"></i>
+                                <span class="card-text text-start py-1">Time <span
+                                        class="span_bold text-start p-3">2:00am - 5:00pm</span></span>
+                            </div>
+                            <div class="text-center">
+                                <p class=" span_bold pt-1" style="color:#42C1C6;">
+                                    <i class="far fa-check-circle text-center" style="color:#42C1C6;"></i>Published
+                                </p>
+                                <a href="#" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
