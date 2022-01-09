@@ -92,12 +92,54 @@ nav{
 }
 
 .logo{
-    height: 64px;
+    margin: 12px 50px 12px 50px;
+}
+
+.nav-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    height: 38px;
+    margin-right: 26px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+.nav-icon-link{
+    margin-left: 24px;
+    height: 25px;
+    width: 25px;
 }
 
 /* Intro */
+#intro .card-body{
+    padding: 30px;
+}
 
+.info-heading-container{
+    padding: 0px !important;
+}
 
+.info-heading{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 60px;
+    width: 100%;
+}
+
+.info-content{
+    padding-left: 25px;
+    width: 65%;
+}
 
 .intro_info img{
     border: 1px solid rgba(226, 226, 226, 0.514);
@@ -128,8 +170,13 @@ nav{
 }
 
 .farm_info {
-    margin-top: 20px;
     margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.farm_location{
+    margin-top: 30px !important;
+    font-size: 30px;
 }
 
 /* Impact */
@@ -148,6 +195,7 @@ nav{
 .impact_icon {
     height: 88px;
     display: inline-block;  
+    padding: 5px
 }
 
 .impact_info {
@@ -163,6 +211,17 @@ nav{
     font-weight: 400;
 }
 
+.impact_title{
+    font-size: 23px;
+}
+
+.impact_data{
+    font-size: 20px;
+}
+
+.impact_freq{
+    font-size: 12px;
+}
 
 .impact_group:hover {
     color: #42C1C6;
@@ -172,6 +231,17 @@ nav{
     font-size: 12px;
     font-weight: 400;
 }
+
+#impact .impact_icon {
+    height: 88px;
+    display: inline-block;  
+    margin-right: 15px !important;
+}
+
+#impact .impact_group{
+    padding: 10px 10px 10px 25px;
+}
+
 
 .soil-planted{
     width: 200px;
@@ -368,9 +438,6 @@ nav{
     height: 90px;
 }
 
-.mt-5 {
-    margin-top: 20px !important;
-}
 
 .timeframes{
     display: flex;
