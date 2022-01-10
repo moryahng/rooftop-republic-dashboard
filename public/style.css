@@ -70,8 +70,8 @@ section{
 }
 
 .btn:hover {
-    background: #265769;
-    color: white;
+    background: #265769 !important;
+    color: white !important;
 }
 
 a {
@@ -89,6 +89,10 @@ nav{
     background-color: #221F20;
     margin-bottom: 100px;
 
+}
+
+.nav-link:hover{
+    color: #42C1C6;
 }
 
 .logo{
@@ -223,8 +227,9 @@ nav{
     font-size: 12px;
 }
 
-.impact_group:hover {
-    color: #42C1C6;
+
+a:hover {
+    color: #42C1C6 !important;
 }
 
 .impact_freq {
@@ -464,4 +469,8 @@ nav{
 .timeframe-option{
     color: #656565;
     font-size: 14;
+}
+
+#events{
+    margin-bottom: 100px;
 }

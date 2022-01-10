@@ -56,7 +56,7 @@ $(() => {
                                 </p>
                                 {{else}}
                                 <p class=" span_bold pt-1" style="color:#212529;">
-                                    <i class="far fa-check-circle text-center" style="color:#42C1C6;"></i>Draft
+                                    <i class="far fa-edit text-center" style="color:grey"></i><span style="color:grey">Draft</span>
                                 </p>
                                 {{/if}}
                                 <a href="#" class="btn btn-primary">More Details</a>
