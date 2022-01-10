@@ -20,7 +20,7 @@ $(() => {
         `
         );
         let visits = 0;
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < 7; i++) {
           visits += data[i].visit;
         }
         $("#visitors").html(
@@ -29,7 +29,7 @@ $(() => {
       })
       .catch((err) => {
         console.log(err);
-        // window.location.reload();
+        window.location.reload();
       });
   });
 });
@@ -55,7 +55,7 @@ $(() => {
         `
         );
         let visits = 0;
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < 7; i++) {
           visits += data[i].visit;
         }
         $("#socialMedia").html(
@@ -64,7 +64,7 @@ $(() => {
       })
       .catch((err) => {
         console.log(err);
-        // window.location.reload();
+        window.location.reload();
       });
   });
 });
