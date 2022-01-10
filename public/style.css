@@ -242,6 +242,10 @@ nav{
     padding: 10px 10px 10px 25px;
 }
 
+.timeframe-option .current{
+ color: #58BFBF;
+ border-bottom: solid 1px;
+}
 
 .soil-planted{
     width: 200px;

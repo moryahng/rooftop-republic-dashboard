@@ -371,6 +371,13 @@ exports.seed = function(knex) {
         {farm_id: 1, date: '2021-1-9', visit:589},
         {farm_id: 1, date: '2021-1-8', visit:925},
         {farm_id: 1, date: '2021-1-7', visit:568},
+        {farm_id: 2, date: '2022-1-7', visit:822},
+        {farm_id: 2, date: '2022-1-6', visit:602},
+        {farm_id: 2, date: '2022-1-5', visit:1037},
+        {farm_id: 2, date: '2022-1-4', visit:1022},
+        {farm_id: 2, date: '2022-1-3', visit:1419},
+        {farm_id: 2, date: '2022-1-2', visit:1445},
+        {farm_id: 2, date: '2022-1-1', visit:1061},
       ]);
     });
 };
